@@ -29,7 +29,7 @@ function App() {
         <button
           onClick={startGame}
           disabled={isTimeRunning}
-          className="animate__animated animate__pulse start-button"
+          className="animate__animated animate__pulse start-button animate__repeat-2 animate__delay-2s"
         >
           Start
         </button>
