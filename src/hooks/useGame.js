@@ -1,5 +1,5 @@
 import {useState, useEffect, useRef} from "react"
-
+// default game time is 10 seconds, can be changed by passing via prop
 function useGame(startingTime = 10) {
     const [text, setText] = useState("")
     const [timeRemaining, setTimeRemaining] = useState(startingTime)
@@ -38,6 +38,7 @@ function useGame(startingTime = 10) {
         } else if(timeRemaining === 0) {
             endGame()
         }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [timeRemaining, isTimeRunning])
 
     return {textBoxRef, handleChange, text, isTimeRunning, timeRemaining, startGame, wordCount}

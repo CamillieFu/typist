@@ -1,38 +1,60 @@
-.App {
+
+.app {
+  height: 100vh;
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  background-color: #6842d8;
+  font-family: 'Work Sans', sans-serif;
+}
+
+.game-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 80vh;
+  width: 80vw;
+  background-color: #4726ca;
+  border-radius: 16px;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.game-header {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* main header */
+h1.game-header {
+  margin-bottom: 0;
+  text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.124);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* word count header */
+h3.game-header {
+  font-size: 2rem;
+  color: #eee9ff;
+  text-shadow: 0px 0px 2px rgba(255, 255, 255, 0.7);
+  margin-top: 1rem;
+}
+
+.game-subheader {
+  font-weight: 400;
+  margin-top: 0;
+  color: #958caf;
+}
+
+.game-textbox {
+  height: 300px;
+  width: 70%;
+}
+
+.start-button {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  padding: 1rem 3rem;
+  border-radius: 8px;
+  border: none;
+  font-size: 1rem;
+  font-weight: 800;
 }
